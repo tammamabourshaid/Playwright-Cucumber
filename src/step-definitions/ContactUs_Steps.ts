@@ -73,7 +73,7 @@ When('I type specific text {string} and a number {int} within the comment input 
 //Random Data - Faker
 When('I type a random first name', async () => {
     const randomFirstName = faker.person.firstName();
-    await pageFixture.page.getByPlaceholder('First Name').fill(rand omFirstName);
+    await pageFixture.page.getByPlaceholder('First Name').fill(randomFirstName);
 });
 
 When('I type a random last name', async () => {
